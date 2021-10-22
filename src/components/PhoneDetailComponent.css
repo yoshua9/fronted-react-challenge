@@ -1,0 +1,135 @@
+.details__outside {
+    overflow: hidden; 
+}
+
+.details-not-found--msg {
+    padding: 10px 40px; 
+}
+
+.details__container {
+    padding-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    border: 1px solid lightgrey;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.details__container.error-msg {
+    padding-bottom: 0;
+}
+
+.details__title-container{
+  width: 100%;
+  background: rgba(158, 158, 158, 0.29);
+  border-bottom: 2px solid #6BAF45;
+}
+
+.phone__title{
+    font-size: 20px;
+}
+
+.phone__details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.phone__image-container{
+    height: 300px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone__image{
+    max-height: 100%;
+    max-width: 100%;
+}
+.more-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.details__list-item{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.details__list-item > p {
+    margin: 8px 0;
+}
+.details__key{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+.details__price-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 8px;
+}
+.details__phone--price-key{
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.details__phone--price{
+    font-size: 32px;
+    font-weight: bold;
+    color: #6BAF45;
+}
+@media all and (min-width: 325px) {
+    .details__container{
+        margin: 40px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .phone__title{
+    font-size: 22px;
+    }
+    .details__container{
+        margin: 60px;
+    }
+    .phone__details-container {
+      flex-direction: row;
+    } 
+    .phone__image-container{
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .phone__title{
+        font-size: 24px;
+    }
+    .details__list-item.plus{
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .details__key.plus{
+        padding-right: 8px;
+    }
+}
